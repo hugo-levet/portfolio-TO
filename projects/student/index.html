@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Théo Farnole | Projets étudiants</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- scripts -->
+        <!--        <script src="db_studentprojects.json" type="text/javascript"></script>-->
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Projets étudiants</h1>
+
+        <section id="projects">
+            <script>            
+                var database = {
+                    "Stickwars" :
+                    {
+                        "description" : "C'est cool le foutre kles orange et la mandarine parce que en vrai la mandarine et les orage c\'est pas trop trop la memem chose héhé, on mélange pas les tomatye et kles serviette mon con (cochon pardon) bitas prout eheh lalalalilalol !",
+                        "content_1" : "https://www.sukaprod.com/img/logosukabliat.png",
+                        "content_2" : "https://hugolevet.sukaprod.com/img/moi.jpg",
+                        "content_3" : "https://www.sukaprod.com/img/bombeC.png"},
+                    "bitas" :
+                    {
+                        "description" : "C\'est coodiferrentre kles orangeautre chose de coolen vrai la mandarine et les orage c\'est pas trop tegypte on mélange pas les tomatye et kles servij\'aime le fromage de chevre bien dure comme mon champ de bléon (cochon pard??§! rF !er §er",
+                        "content_1" : "https://www.sukaprod.com/img/background_projects.png",
+                        "content_2" : "https://www.sukaprod.com/img/pub.png",
+                        "content_3" : "https://www.sukaprod.com/img/videogames.png"
+                    }
+                };
+
+                var db = Object.keys(database);
+                var size_db = db.length;
+                console.log(size_db);
+
+                var article = new Array(0);
+
+                document.body.onload = addElement;
+
+                function addElement () {
+
+                    for(var i = 0; i < size_db; i++)
+                    {
+                        console.log('creation article ' + i);
+
+                        //crée l'article
+                        article.push(document.createElement("article"));
+
+                        // et lui donne un peu de contenu
+                        var titre = document.createElement("h3");
+                        var newContent = document.createTextNode(db[i]);
+                        titre.appendChild(newContent);
+                        
+                        var div_img = document.createElement("div");
+                        
+                        var img_big = document.createElement("img");
+//                        var newContent = document.createTextNode(db[i]);
+//                        titre.appendChild(newContent);
+                        
+                        var div_img_little = document.createElement("div");
+                        
+                        var img_little1 = document.createElement("img");
+//                        var newContent = document.createTextNode(db[i]);
+//                        titre.appendChild(newContent);
+                        
+                        var img_little2 = document.createElement("img");
+//                        var newContent = document.createTextNode(db[i]);
+//                        titre.appendChild(newContent);
+                        
+                        var img_little3 = document.createElement("img");
+//                        var newContent = document.createTextNode(db[i]);
+//                        titre.appendChild(newContent);
+                        
+                        var description = document.createElement("p");
+                        var newContent = document.createTextNode(database[db[i]].description);
+                        description.appendChild(newContent);
+
+                        
+                        // ajoute le nœud texte au nouveau div créé
+                        article[i].appendChild(titre);
+                        article[i].appendChild(div_img);
+                        div_img.appendChild(img_big);
+                        div_img.appendChild(div_img_little);
+                        div_img_little.appendChild(img_little1);
+                        div_img_little.appendChild(img_little2);
+                        div_img_little.appendChild(img_little3);
+                        article[i].appendChild(description);
+
+                        // ajoute le nouvel élément créé et son contenu dans le DOM
+                        var currentDiv = document.getElementById('projects');
+                        document.body.insertBefore(article[i], currentDiv);
+                    }
+                }
+            </script>
+        </section>
+
+        <footer>
+            <p>&copy;Copyright SukaProd - Tous droits réservés</p>
+            <p>Un service développé et conçu par <a href="https://hugolevet.fr">Hugo Levet</a></p>
+        </footer>
+    </body>
+</html>
