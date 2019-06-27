@@ -3,15 +3,18 @@ link :
 https://heron4102.github.io/portfolio-TO/
 
 ## TO DO
-- add image de profil HOME
-- add twitter HOME
-- add articles project background PROJECTS
+### add
+- **HOME** image de profil
+- **HOME** twitter
+- **PROJECTS** articles project background
 
-- modif img background HOME
-- modif description HOME
-- modif citation HOME
-- modif all of projects PROJECTS
+### change
+- **HOME** img background HOME
+- **HOME** description HOME
+- **HOME** citation HOME
+- **PROJECTS** all of projects
 
--improve project navigation ALL
--improve CEO ALL
--improve organisation header ALL
+### improve
+- **ALL** project navigation
+- **ALL** CEO
+- **ALL** organisation header
