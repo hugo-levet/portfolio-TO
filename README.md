@@ -1,4 +1,4 @@
-# portfolio-TO V1.2
+# portfolio-TO V1.3
 link :
 https://heron4102.github.io/portfolio-TO/
 
@@ -14,6 +14,8 @@ https://heron4102.github.io/portfolio-TO/
 ### improve
 - **ALL** project navigation
 - **ALL** CEO
+- **ALL** organisation CSS
+- **HOME** background parallax
 
 ### bug
 :negative_squared_cross_mark:
