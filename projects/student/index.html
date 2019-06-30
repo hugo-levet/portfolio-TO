@@ -2,16 +2,18 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Théo Farnole | Projets étudiants</title>
-        
         <meta name="viewport" content="width=device-width">
+
+        <!-- title bar -->
+        <title>Théo Farnole - Projets étudiants</title>
+        <!-- ico -->
+        <meta name="theme-color" content="#1d1e29">
 
         <!-- css -->
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="../css/style.css">
 
         <!-- scripts -->
-        <!--        <script src="db_studentprojects.json" type="text/javascript"></script>-->
         <script src="../js/afficheImgEnGrand.js" type="text/javascript"></script>
 
     </head>
@@ -71,51 +73,43 @@
                         var titre = document.createElement("h3");
                         var newContent = document.createTextNode(db[i]);
                         titre.appendChild(newContent);
-                        
+
                         var div_img = document.createElement("div");
                         div_img.classList.add("div_img");
-                        
+
                         var div_img_big = document.createElement("div");
                         div_img_big.classList.add("div_img_big");
-                        
+
                         var img_big = document.createElement("img");
                         img_big.setAttribute("src", database[db[i]].content_1);
                         img_big.classList.add("img_big");
-//                        var newContent = document.createTextNode(db[i]);
-//                        titre.appendChild(newContent);
-                        
+
                         var div_img_little = document.createElement("div");
                         div_img_little.classList.add("div_img_little");
-                        
+
                         var img_little1 = document.createElement("img");
                         img_little1.setAttribute("src", database[db[i]].content_1);
                         img_little1.setAttribute("onClick", "afficheImgEnGrand(" + i + ", '" + database[db[i]].content_1 + "')");
-//                        var newContent = document.createTextNode(db[i]);
-//                        titre.appendChild(newContent);
-                        
+
                         var img_little2 = document.createElement("img");
                         img_little2.setAttribute("src", database[db[i]].content_2);
                         img_little2.setAttribute("onClick", "afficheImgEnGrand(" + i + ", '" + database[db[i]].content_2 + "')");
-//                        var newContent = document.createTextNode(db[i]);
-//                        titre.appendChild(newContent);
-                        
+
                         var img_little3 = document.createElement("img");
                         img_little3.setAttribute("src", database[db[i]].content_3);
                         img_little3.setAttribute("onClick", "afficheImgEnGrand(" + i + ", '" + database[db[i]].content_3 + "')");
-//                        var newContent = document.createTextNode(db[i]);
-//                        titre.appendChild(newContent);
-                        
+
                         var description = document.createElement("p");
                         var newContent = document.createTextNode(database[db[i]].description);
                         description.appendChild(newContent);
-                        
+
                         var play_button = document.createElement("a");
                         var newContent = document.createTextNode("PLAY");
                         play_button.appendChild(newContent);
                         play_button.setAttribute("href", database[db[i]].link);
                         play_button.classList.add("play_button");
 
-                        
+
                         // ajoute le nœud texte au nouveau div créé
                         section.appendChild(article[i]);
                         article[i].appendChild(titre);

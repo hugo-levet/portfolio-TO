@@ -15,11 +15,17 @@ article{
     text-align: center;
     margin-bottom: 30px;
     max-width: 500px;
+    background-color: #021529;
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding-bottom: 25px;
 }
 
 article h3{
     font-family: 'Skranji', cursive;
     text-align: center;
+    margin-top: 5px;
 }
 
 article .div_img{
@@ -52,6 +58,7 @@ article .div_img_little img{
 }
 
 article p{
+    margin-top: 5px;
     text-align: justify;
 }
 

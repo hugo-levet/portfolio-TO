@@ -2,9 +2,12 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Théo Farnole | Portfolio</title>
-        
         <meta name="viewport" content="width=device-width">
+        
+        <!-- title bar -->
+        <title>Théo Farnole - Portfolio</title>
+        <!-- ico -->
+        <meta name="theme-color" content="#1d1e29">
         
         <!-- css -->
         <link rel="stylesheet" href="css/style.css">
@@ -16,6 +19,8 @@
 
         <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/40ba24a3cb.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     </head>
     <body>
@@ -29,17 +34,18 @@
             </nav>
         </header>
         <section id="welcome">
+            <img src="https://image.noelshack.com/fichiers/2016/47/1480085628-img-20160901-145407.jpg"/>
             <h1>Théo Farnole</h1>
-            <p>Une personne très belle</p>
+            <p>Game designer</p>
         </section>
         <section id="presentation">
             <h2>Présentation</h2>
             <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia vitae tellus quis maximus. Sed maximus nisi sit amet odio egestas, eget cursus arcu aliquet. Fusce vehicula ut enim id vestibulum. Suspendisse est nibh, sagittis sed erat at, eleifend molestie massa. Aenean mattis urna sit amet ligula ornare, non interdum diam sodales. Morbi in felis id enim congue blandit. Phasellus rutrum lacus dictum arcu molestie, vitae fringilla nisl posuere.<br/>
-            <br/>
-            Vivamus quis urna tellus. Duis ornare, lacus nec cursus pharetra, velit mi facilisis purus, non mattis nisl nisl eget turpis. Sed dignissim tincidunt dui ut blandit. Vivamus eu lectus in turpis malesuada ultricies sed id ex. Nunc consequat, turpis pulvinar dignissim congue, elit risus convallis velit, in consequat nibh diam eget mauris. Mauris neque tellus, viverra a dapibus non, rutrum ac eros. Etiam sed ante sit amet tortor sollicitudin scelerisque. Quisque consequat elit id consequat porttitor. Aenean in lacus quis felis laoreet commodo non sed ligula. Suspendisse venenatis et arcu ut fringilla. Cras blandit lacus nec mollis dapibus. Integer mattis id tellus eget sollicitudin.<br/>
-            <br/>
-            Duis facilisis felis purus. Praesent non tellus elit. Phasellus ut neque ipsum. Maecenas tempus urna eget ipsum elementum pharetra. Vestibulum tincidunt sit amet risus vel malesuada. Donec nibh arcu, fringilla id mi volutpat, volutpat hendrerit sem. Duis sodales pellentesque eros sed blandit. Curabitur libero magna, eleifend vitae tortor eget, bibendum facilisis velit. Quisque viverra semper neque ac laoreet. Phasellus fringilla sollicitudin tincidunt. Quisque vel metus convallis, gravida libero et, vulputate elit. Integer non maximus nisi. Ut interdum erat in est pellentesque, vel egestas quam faucibus. Nulla elit magna, efficitur sed ante non, gravida lacinia nisl. Ut efficitur ex nec metus rhoncus tincidunt id sed nibh. Donec quis ultrices ipsum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia vitae tellus quis maximus. Sed maximus nisi sit amet odio egestas, eget cursus arcu aliquet. Fusce vehicula ut enim id vestibulum. Suspendisse est nibh, sagittis sed erat at, eleifend molestie massa. Aenean mattis urna sit amet ligula ornare, non interdum diam sodales. Morbi in felis id enim congue blandit. Phasellus rutrum lacus dictum arcu molestie, vitae fringilla nisl posuere.<br/>
+                    <br/>
+                    Vivamus quis urna tellus. Duis ornare, lacus nec cursus pharetra, velit mi facilisis purus, non mattis nisl nisl eget turpis. Sed dignissim tincidunt dui ut blandit. Vivamus eu lectus in turpis malesuada ultricies sed id ex. Nunc consequat, turpis pulvinar dignissim congue, elit risus convallis velit, in consequat nibh diam eget mauris. Mauris neque tellus, viverra a dapibus non, rutrum ac eros. Etiam sed ante sit amet tortor sollicitudin scelerisque. Quisque consequat elit id consequat porttitor. Aenean in lacus quis felis laoreet commodo non sed ligula. Suspendisse venenatis et arcu ut fringilla. Cras blandit lacus nec mollis dapibus. Integer mattis id tellus eget sollicitudin.<br/>
+                    <br/>
+                    Duis facilisis felis purus. Praesent non tellus elit. Phasellus ut neque ipsum. Maecenas tempus urna eget ipsum elementum pharetra. Vestibulum tincidunt sit amet risus vel malesuada. Donec nibh arcu, fringilla id mi volutpat, volutpat hendrerit sem. Duis sodales pellentesque eros sed blandit. Curabitur libero magna, eleifend vitae tortor eget, bibendum facilisis velit. Quisque viverra semper neque ac laoreet. Phasellus fringilla sollicitudin tincidunt. Quisque vel metus convallis, gravida libero et, vulputate elit. Integer non maximus nisi. Ut interdum erat in est pellentesque, vel egestas quam faucibus. Nulla elit magna, efficitur sed ante non, gravida lacinia nisl. Ut efficitur ex nec metus rhoncus tincidunt id sed nibh. Donec quis ultrices ipsum.</p>
             </div>
         </section>
         <section id="projects">
@@ -54,12 +60,15 @@
             <div>
                 <a href="https://lortedo.itch.io/"><i class="fab fa-itch-io"></i></a>
                 <a href="https://github.com/Lortedo29"><i class="fab fa-github"></i></a>
-<!--                <a href="#twitter"><i class="fab fa-twitter"></i></a>-->
+                <!--                <a href="#twitter"><i class="fab fa-twitter"></i></a>-->
             </div>
         </section>
         <footer>
             <p>&copy;Copyright Théo Farnole - Tous droits réservés</p>
             <p>Un service développé et conçu par <a href="https://hugolevet.fr">Hugo Levet</a></p>
         </footer>
+
+        <!-- script -->
+        <script src="js/parallaxBackground.js"></script>
     </body>
 </html>

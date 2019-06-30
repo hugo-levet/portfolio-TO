@@ -1,20 +1,26 @@
-# portfolio-TO V1.1
+# portfolio-TO V1.2
 link :
 https://heron4102.github.io/portfolio-TO/
 
 ## TO DO
 ### add
-- **HOME** image de profil
-- **HOME** twitter
-- **PROJECTS** articles project background
+:negative_squared_cross_mark:
+:dizzy_face:
 
 ### change
-- **HOME** img background HOME
-- **HOME** description HOME
-- **HOME** citation HOME
-- **PROJECTS** all of projects
+:negative_squared_cross_mark:
+:expressionless:
 
 ### improve
 - **ALL** project navigation
 - **ALL** CEO
-- **ALL** organisation header
+
+### bug
+:negative_squared_cross_mark:
+:sunglasses:
+
+### for TO
+- **IMG** profil
+- **PROJECTS** put the different projects
+- **LINK** twitter
+- **IMG** ico

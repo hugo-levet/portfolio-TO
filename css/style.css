@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: "ZCOOL accent";
-	src: url('/fonts/ZCOOLQingKeHuangYou-Regular.woff') format("woff");
+	src: url('../fonts/ZCOOLQingKeHuangYou-Regular.woff') format("woff");
 }
 
 html, body{
@@ -71,7 +71,7 @@ header a:active{
 }
 
 #welcome{
-    background-image: url(../img/welcome2.png);
+    background-image: url(../img/background%20home.png);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -81,6 +81,12 @@ header a:active{
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+#welcome img{
+    border-radius: 9999px;
+    height: 15%;
+    margin-bottom: 15px;
 }
 
 #welcome h1{
