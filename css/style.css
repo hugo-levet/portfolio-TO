@@ -55,6 +55,44 @@ header li{
     margin: 10px;
 }
 
+header nav > ul{
+/*    background-color: aqua;*/
+}
+
+header nav > ul > li{
+    position: relative;
+}
+
+header nav > ul > li:hover{
+    color: darkgrey;
+    cursor: pointer;
+}
+
+header li > ul{
+    display: none;
+}
+
+header li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: -33%;
+    background-color: #1d1e29;
+    text-align: center;
+}
+
+header .submenu li{
+    border-bottom: 2px solid white;
+    margin: 0px;
+    padding: 10px;
+}
+
+header .submenu li:first-child{
+    border-top: 2px solid white;
+    margin-top: 17px;
+    padding-top: 5px;
+}
+
 header a{
     text-decoration: none;
     color: white;

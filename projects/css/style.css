@@ -6,7 +6,7 @@ h1{
 
 #projects{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -14,12 +14,46 @@ h1{
 article{
     text-align: center;
     margin-bottom: 30px;
-    max-width: 500px;
     background-color: #021529;
     padding: 5px;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    padding-bottom: 25px;
+    display: flex;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+@media screen and (max-width: 1150px) {
+    article{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    article{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    article{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    article{
+        flex-direction: column;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+}
+
+article div{
+    padding: 5px;
 }
 
 article h3{
@@ -28,8 +62,14 @@ article h3{
     margin-top: 5px;
 }
 
+article .div_desc{
+    padding-bottom: 20px;
+}
+
 article .div_img{
     display: flex;
+    max-height: 50%;
+    width: auto;
 }
 
 article .div_img_big{

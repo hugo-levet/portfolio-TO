@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        
+
         <!-- title bar -->
         <title>Théo Farnole - Portfolio</title>
         <!-- ico -->
         <meta name="theme-color" content="#1d1e29">
-        
+
         <!-- css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/home.css">
@@ -26,7 +26,12 @@
             <nav>
                 <ul>
                     <li><a href="#">Accueil</a></li>
-                    <li><a href="#projects">Projets</a></li>
+                    <li>Projets
+                        <ul class="submenu">
+                            <li><a href="projects/personal/index.html">personnels</a></li>
+                            <li><a href="projects/student/index.html">étudiants</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -46,13 +51,13 @@
                     Duis facilisis felis purus. Praesent non tellus elit. Phasellus ut neque ipsum. Maecenas tempus urna eget ipsum elementum pharetra. Vestibulum tincidunt sit amet risus vel malesuada. Donec nibh arcu, fringilla id mi volutpat, volutpat hendrerit sem. Duis sodales pellentesque eros sed blandit. Curabitur libero magna, eleifend vitae tortor eget, bibendum facilisis velit. Quisque viverra semper neque ac laoreet. Phasellus fringilla sollicitudin tincidunt. Quisque vel metus convallis, gravida libero et, vulputate elit. Integer non maximus nisi. Ut interdum erat in est pellentesque, vel egestas quam faucibus. Nulla elit magna, efficitur sed ante non, gravida lacinia nisl. Ut efficitur ex nec metus rhoncus tincidunt id sed nibh. Donec quis ultrices ipsum.</p>
             </div>
         </section>
-        <section id="projects">
+        <!--<section id="projects">
             <h2>Mes projets</h2>
             <div>
                 <a href="projects/personal/">Projets personnels</a>
                 <a href="projects/student/">Projets étudiants</a>
             </div>
-        </section>
+        </section> -->
         <section id="contact">
             <h2>Contact</h2>
             <div>
@@ -67,6 +72,6 @@
         </footer>
 
         <!-- script -->
-<!--        <script src="js/parallaxBackground.js"></script>-->
+        <!--        <script src="js/parallaxBackground.js"></script>-->
     </body>
 </html>

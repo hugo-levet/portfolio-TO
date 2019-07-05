@@ -9,10 +9,8 @@ https://heron4102.github.io/portfolio-TO/
 
 ### change
 :negative_squared_cross_mark:
-:expressionless:
 
 ### improve
-- **ALL** project navigation
 - **ALL** CEO
 - **ALL** organisation CSS
 - **HOME** background parallax

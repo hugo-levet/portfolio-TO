@@ -23,7 +23,12 @@
             <nav>
                 <ul>
                     <li><a href="../../index.html">Accueil</a></li>
-                    <li><a href="../student/index.html">Projets étudiants</a></li>
+                    <li>Projets
+                        <ul class="submenu">
+                            <li><a href="#">personnels</a></li>
+                            <li><a href="../student/index.html">étudiants</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../../index.html#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -75,6 +80,9 @@
                         var newContent = document.createTextNode(db[i]);
                         titre.appendChild(newContent);
 
+                        var div_desc = document.createElement("div");
+                        div_desc.classList.add("div_desc");
+
                         var div_img = document.createElement("div");
                         div_img.classList.add("div_img");
 
@@ -113,7 +121,10 @@
 
                         // ajoute le nœud texte au nouveau div créé
                         section.appendChild(article[i]);
-                        article[i].appendChild(titre);
+                        article[i].appendChild(div_desc);
+                        div_desc.appendChild(titre);
+                        div_desc.appendChild(description);
+                        div_desc.appendChild(play_button);
                         article[i].appendChild(div_img);
                         div_img.appendChild(div_img_big);
                         div_img_big.appendChild(img_big);
@@ -121,8 +132,6 @@
                         div_img_little.appendChild(img_little1);
                         div_img_little.appendChild(img_little2);
                         div_img_little.appendChild(img_little3);
-                        article[i].appendChild(description);
-                        article[i].appendChild(play_button);
                     }
                 }
             </script>
